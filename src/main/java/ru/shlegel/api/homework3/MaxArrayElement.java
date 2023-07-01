@@ -1,15 +1,13 @@
 package ru.shlegel.api.homework3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MaxArrayElement {
-    public static void getMaxArrayElem(ArrayList<Integer> someArray) {
-        int maxElem = someArray.get(0);
-        for (int elem: someArray) {
-            if (elem > maxElem) {
-                maxElem = elem;
-            }
+    public static void getMaxArrayElem(ArrayList<Integer> someList) {
+        if (someList.isEmpty()) {
+            throw new IllegalArgumentException("Список пуст");
         }
-        System.out.println("Максимальное значение: " + maxElem);
+        System.out.println("Минимальное значение: " + Collections.max(someList));
     }
 }

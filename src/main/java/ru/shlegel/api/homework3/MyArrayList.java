@@ -8,9 +8,9 @@ public class MyArrayList {
 
         Random random = new Random();
         ArrayList<Integer> arrayList = new ArrayList<>();
-        int size = random.nextInt(7, 20);
+        int size = random.nextInt(8,20);
         for (int i = 0; i < size; i++){
-            arrayList.add(random.nextInt(1, 20));
+            arrayList.add(random.nextInt(30));
         }
         System.out.println("Список целых чисел: " + arrayList);
         return arrayList;
