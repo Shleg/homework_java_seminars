@@ -45,11 +45,11 @@ public class Cat {
     }
 
     public Cat(String name, int age, String color) {
-        this.name = name;
-        this.age = age;
         if ((!ALLOWED_COLORS.contains(color))){
             throw new RuntimeException("Цвет должен быть из списка: " + Arrays.toString(ALLOWED_COLORS.toArray()));
         }
+        this.name = name;
+        this.age = age;
         this.color = color;
     }
 
